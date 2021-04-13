@@ -2,32 +2,37 @@
   position: fixed;
   top: 0;
   left: 0;
-  color: darkblue;
+  background-color: darkblue;
+  width: 300px;
+  height: 200px;
   
   .setting-input {
     height : 1em;
-    width: 20%;
-    padding: 0.1rem;
+    width: 150px;
+    padding: 1rem;
     font-size: 0.8rem;
     border: 2px;
+    border-radius: 3px;
 
   }
   .sett-pass {
     height : 1em;
-    width: 20%;
-    padding: 0.1rem;
+    width: 150px;
+    padding: 1rem;
     font-size: 0.8rem;
     border: 2px;
+    border-radius: 3px;
 
   }
   .sett-submit {
     height : 1em;
-    width: 20%;
-    padding: 0.1rem;
+    width: 150px;
+    padding: 1rem;
     font-size: 0.8rem;
     border: 2px;
     color: white;
     background-color: purple;
+    border-radius: 3px;
 
   }
 

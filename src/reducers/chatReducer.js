@@ -1,4 +1,4 @@
-import { UPDATE_INPUT_MESSAGE, ADD_MESSAGE } from 'src/actions/chat';
+import { UPDATE_INPUT_MESSAGE, ADD_MESSAGE, CLOSE_SETTINGS } from 'src/actions/chat';
 
 import { getHighestId } from 'src/utils';
 
@@ -22,6 +22,7 @@ const initialState = {
   ],
   // contenu de l'input pour saisir un message
   inputMessage: '',
+  closeSettings: true,
 };
 
 function nameForTheReducer(state = initialState, action) {
@@ -62,6 +63,12 @@ function nameForTheReducer(state = initialState, action) {
 
     default:
       return state;
+
+    case CLOSE_SETTINGS:
+      return {
+        ...state,
+        closeSettings: state.true,
+      };
   }
 }
 
